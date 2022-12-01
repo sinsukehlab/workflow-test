@@ -18,3 +18,4 @@ jobs:
           ls -la /
           ls -la ..
           ls -la ../..
+          git config -l
