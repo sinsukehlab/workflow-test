@@ -33,7 +33,7 @@ jobs:
           git config -l
 
           echo "Make an empty commit"
-          git config user.name github-actions[bot]
+          git config user.name github-actions
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git commit --message="Create empty commit" --allow-empty
 
