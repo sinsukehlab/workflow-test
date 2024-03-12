@@ -29,7 +29,7 @@ jobs:
 
       - name: grep check
         run: |
-          grep -E $search -- $file
+          grep -E $search $file
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           file: "test.txt"
