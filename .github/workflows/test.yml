@@ -24,7 +24,7 @@ jobs:
           ls -la
           ls -la /
           sudo -l
-          grep --extended-regex "'a'" test.txt
+          grep --extended-regex "a" test.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
