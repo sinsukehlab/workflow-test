@@ -55,8 +55,26 @@ jobs:
           file: "test.txt"
           search: "axios-(?!0\\.21\\.1)(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?"
 
-      - name: Check README.md for headers
+      - name: Check index.md for headers
         uses: sinsukehlab/action-check-file@v1.1.0-alpha
         with:
-          file: "README.md"
+          file: "index.md"
           search: "# [a-zA-Z0-9]"
+
+      - name: Check index.md for images
+        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        with:
+          file: "index.md"
+          search: "\\!\\[.*](.*)"
+
+      - name: Check index.md for code blocks
+        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        with:
+          file: "index.md"
+          search: "\\`\\`\\`"
+
+      - name: Check index.md for task lists
+        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        with:
+          file: "index.md"
+          search: "\\- \\[ ]"
