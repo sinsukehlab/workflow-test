@@ -59,22 +59,22 @@ jobs:
         uses: sinsukehlab/action-check-file@v1.1.0-alpha
         with:
           file: "index.md"
-          search: "# [a-zA-Z0-9]"
+          search: "#{1,6}\ [a-zA-Z0-9]"
 
       - name: Check index.md for images
         uses: sinsukehlab/action-check-file@v1.1.0-alpha
         with:
           file: "index.md"
-          search: "\\!\\[.*](.*)"
+          search: "\\!\\[.*\\]\\(.*\\)"
 
       - name: Check index.md for code blocks
         uses: sinsukehlab/action-check-file@v1.1.0-alpha
         with:
           file: "index.md"
-          search: "\\`\\`\\`"
+          search: "```"
 
       - name: Check index.md for task lists
         uses: sinsukehlab/action-check-file@v1.1.0-alpha
         with:
           file: "index.md"
-          search: "\\- \\[ ]"
+          search: "-\ \\[[\ x]\\]"
