@@ -77,4 +77,4 @@ jobs:
         uses: sinsukehlab/action-check-file@v1.1.0-alpha
         with:
           file: "index.md"
-          search: "-\ \\[[\ x]\\]"
+          search: "\\-\ \\[[\ x]\\]"
