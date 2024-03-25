@@ -59,7 +59,7 @@ jobs:
         uses: sinsukehlab/action-check-file@v1.1.0-alpha
         with:
           file: "index.md"
-          search: "#{1,6}\ [a-zA-Z0-9]"
+          search: "(?<!#)#{1,6}([\ \t](.*))?$"
 
       - name: Check index.md for images
         uses: sinsukehlab/action-check-file@v1.1.0-alpha
