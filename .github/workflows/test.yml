@@ -44,37 +44,37 @@ jobs:
           search: "axios-(?!0\\.21\\.[01])(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?"
 
       - name: Check package.json
-        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        uses: skills/action-check-file@v1
         with:
           file: "test.txt"
           search: "\"axios\":[\ \\n\\r\\t]\"\\^(?!0\\.21\\.[01])(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?\""
 
       - name: Check package-lock.json
-        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        uses: skills/action-check-file@v1
         with:
           file: "test.txt"
           search: "axios-(?!0\\.21\\.[01])(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9][0-9]*|[0-9]*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?"
 
       - name: Check index.md for headers
-        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        uses: skills/action-check-file@v1
         with:
           file: "index.md"
           search: "(?<!#)#{1,6}([\ \t](.*))?$"
 
       - name: Check index.md for images
-        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        uses: skills/action-check-file@v1
         with:
           file: "index.md"
           search: "\\!\\[.*\\]\\(.*\\)"
 
       - name: Check index.md for code blocks
-        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        uses: skills/action-check-file@v1
         with:
           file: "index.md"
           search: "```"
 
       - name: Check index.md for task lists
-        uses: sinsukehlab/action-check-file@v1.1.0-alpha
+        uses: skills/action-check-file@v1
         with:
           file: "index.md"
           search: "\\-\ \\[[\ x]\\]"
