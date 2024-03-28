@@ -77,4 +77,4 @@ jobs:
         uses: skills/action-check-file@v1
         with:
           file: "index.md"
-          search: "\\[-+*][\ \\t]+\\[[\ \\txX]\\][\ \\t]+\\S.*$"
+          search: "[\\-\\+\\*][\ \\t]+\\[[\ \\txX]\\][\ \\t]+\\S.*$"
