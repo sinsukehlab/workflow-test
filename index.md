@@ -41,3 +41,12 @@ var myVar = "Hello, world!";
 - [ 	] a
 - [x] a
 - [X] a
+
++ [ ] a
+* [ ] a
+
+0. [ ] a
+1. [ ] a
+10. [ ] a
+01. [ ] a
+0.	[ ] a
