@@ -78,3 +78,15 @@ jobs:
         with:
           file: "index.md"
           search: "([\\-\\+\\*]|[0-9]+\\.)[\ \\t]+\\[[\ \\t\\fxX]\\][\ \\t\\f]+\\S.*$"
+
+      - name: Check Hello
+        uses: skills/action-check-file@v1
+        with:
+          file: "test.txt"
+          search: "Hello from the codespace"
+
+      - name: Check sl
+        uses: skills/action-check-file@v1
+        with:
+          file: "test.txt"
+          search: "install sl"
